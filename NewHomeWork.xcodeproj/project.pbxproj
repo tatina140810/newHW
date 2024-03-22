@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		AFC6CE622BAB1E4600751ECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6CE612BAB1E4600751ECC /* AppDelegate.swift */; };
 		AFC6CE642BAB1E4600751ECC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6CE632BAB1E4600751ECC /* SceneDelegate.swift */; };
-		AFC6CE662BAB1E4600751ECC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6CE652BAB1E4600751ECC /* ViewController.swift */; };
-		AFC6CE692BAB1E4600751ECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC6CE672BAB1E4600751ECC /* Main.storyboard */; };
+		AFC6CE662BAB1E4600751ECC /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6CE652BAB1E4600751ECC /* SignInVC.swift */; };
 		AFC6CE6B2BAB1E4800751ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC6CE6A2BAB1E4800751ECC /* Assets.xcassets */; };
 		AFC6CE6E2BAB1E4800751ECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC6CE6C2BAB1E4800751ECC /* LaunchScreen.storyboard */; };
+		AFC6CE792BAB1F9400751ECC /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6CE782BAB1F9400751ECC /* SuccessVC.swift */; };
+		AFC6CE7C2BAB1FC300751ECC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AFC6CE7B2BAB1FC300751ECC /* SnapKit */; };
+		AFC6CE7E2BAB1FC300751ECC /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AFC6CE7D2BAB1FC300751ECC /* SnapKit-Dynamic */; };
+		AFC6CE802BAB1FF500751ECC /* HexExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6CE7F2BAB1FF500751ECC /* HexExtention.swift */; };
+		AFC6CE862BAB20C100751ECC /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6CE852BAB20C100751ECC /* CheckBoxButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AFC6CE5E2BAB1E4600751ECC /* NewHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC6CE612BAB1E4600751ECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFC6CE632BAB1E4600751ECC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AFC6CE652BAB1E4600751ECC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AFC6CE682BAB1E4600751ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFC6CE652BAB1E4600751ECC /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		AFC6CE6A2BAB1E4800751ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFC6CE6D2BAB1E4800751ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFC6CE6F2BAB1E4800751ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFC6CE782BAB1F9400751ECC /* SuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
+		AFC6CE7F2BAB1FF500751ECC /* HexExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexExtention.swift; sourceTree = "<group>"; };
+		AFC6CE852BAB20C100751ECC /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC6CE7C2BAB1FC300751ECC /* SnapKit in Frameworks */,
+				AFC6CE7E2BAB1FC300751ECC /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,41 @@
 		AFC6CE602BAB1E4600751ECC /* NewHomeWork */ = {
 			isa = PBXGroup;
 			children = (
-				AFC6CE612BAB1E4600751ECC /* AppDelegate.swift */,
-				AFC6CE632BAB1E4600751ECC /* SceneDelegate.swift */,
-				AFC6CE652BAB1E4600751ECC /* ViewController.swift */,
-				AFC6CE672BAB1E4600751ECC /* Main.storyboard */,
-				AFC6CE6A2BAB1E4800751ECC /* Assets.xcassets */,
-				AFC6CE6C2BAB1E4800751ECC /* LaunchScreen.storyboard */,
+				AFC6CE752BAB1EBA00751ECC /* AppDelegate */,
+				AFC6CE762BAB1F0B00751ECC /* Controllers */,
+				AFC6CE772BAB1F1E00751ECC /* Resourses */,
 				AFC6CE6F2BAB1E4800751ECC /* Info.plist */,
 			);
 			path = NewHomeWork;
+			sourceTree = "<group>";
+		};
+		AFC6CE752BAB1EBA00751ECC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6CE632BAB1E4600751ECC /* SceneDelegate.swift */,
+				AFC6CE612BAB1E4600751ECC /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AFC6CE762BAB1F0B00751ECC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6CE652BAB1E4600751ECC /* SignInVC.swift */,
+				AFC6CE782BAB1F9400751ECC /* SuccessVC.swift */,
+				AFC6CE852BAB20C100751ECC /* CheckBoxButton.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AFC6CE772BAB1F1E00751ECC /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6CE6C2BAB1E4800751ECC /* LaunchScreen.storyboard */,
+				AFC6CE7F2BAB1FF500751ECC /* HexExtention.swift */,
+				AFC6CE6A2BAB1E4800751ECC /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +117,10 @@
 			dependencies = (
 			);
 			name = NewHomeWork;
+			packageProductDependencies = (
+				AFC6CE7B2BAB1FC300751ECC /* SnapKit */,
+				AFC6CE7D2BAB1FC300751ECC /* SnapKit-Dynamic */,
+			);
 			productName = NewHomeWork;
 			productReference = AFC6CE5E2BAB1E4600751ECC /* NewHomeWork.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = AFC6CE552BAB1E4600751ECC;
+			packageReferences = (
+				AFC6CE7A2BAB1FC300751ECC /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = AFC6CE5F2BAB1E4600751ECC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +168,6 @@
 			files = (
 				AFC6CE6E2BAB1E4800751ECC /* LaunchScreen.storyboard in Resources */,
 				AFC6CE6B2BAB1E4800751ECC /* Assets.xcassets in Resources */,
-				AFC6CE692BAB1E4600751ECC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +178,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFC6CE662BAB1E4600751ECC /* ViewController.swift in Sources */,
+				AFC6CE792BAB1F9400751ECC /* SuccessVC.swift in Sources */,
+				AFC6CE662BAB1E4600751ECC /* SignInVC.swift in Sources */,
 				AFC6CE622BAB1E4600751ECC /* AppDelegate.swift in Sources */,
 				AFC6CE642BAB1E4600751ECC /* SceneDelegate.swift in Sources */,
+				AFC6CE862BAB20C100751ECC /* CheckBoxButton.swift in Sources */,
+				AFC6CE802BAB1FF500751ECC /* HexExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AFC6CE672BAB1E4600751ECC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AFC6CE682BAB1E4600751ECC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AFC6CE6C2BAB1E4800751ECC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +332,6 @@
 				INFOPLIST_FILE = NewHomeWork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +359,6 @@
 				INFOPLIST_FILE = NewHomeWork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +396,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFC6CE7A2BAB1FC300751ECC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFC6CE7B2BAB1FC300751ECC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFC6CE7A2BAB1FC300751ECC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		AFC6CE7D2BAB1FC300751ECC /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFC6CE7A2BAB1FC300751ECC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFC6CE562BAB1E4600751ECC /* Project object */;
 }

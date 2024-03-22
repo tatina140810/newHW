@@ -1,29 +1,44 @@
-//
-//  SuccessVC.swift
-//  NewHomeWork
-//
-//  Created by Tatina Dzhakypbekova on 20/3/24.
-//
-
 import UIKit
+import SnapKit
 
 class SuccessVC: UIViewController {
-
+    
+    private lazy var congrateImage: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(resource: .success)
+        view.contentMode = .scaleAspectFit
+        return view
+    }()
+    
+    private lazy var titleLabel: UILabel = {
+        let view = UILabel()
+        view.text = "Success'"
+        view.font = UIFont.systemFont(ofSize: 23, weight: .bold)
+        view.textColor = .white
+        view.textAlignment = .left
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor =  UIColor(hex: "047494")
+        
+        setupUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupUI() {
+        view.addSubview(congrateImage)
+        congrateImage.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.height.equalTo(184)
+            make.width.equalTo(184)
+        }
+        view.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(congrateImage.snp.bottom).offset(30)
+        }
     }
-    */
-
+    
 }
